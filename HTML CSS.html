@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue de Pièces Détachées</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #333;
+      color: #fff;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Catalogue */
+    .catalogue {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .catalogue h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      max-width: 300px;
+      margin: 1rem auto;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card p {
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e60000;
+    }
+
+    .add-to-cart {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .add-to-cart:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Ma Boutique Auto</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#catalogue">En vente</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Catalogue -->
+  <section id="catalogue" class="catalogue">
+    <h2>Nos Pièces Détachées</h2>
+    <div class="product-card">
+      <img src="images/IMG_7283.jpeg" alt="Nom de la pièce">
+      <h3>Calendre 280sl</h3>
+      <p>Une calendre de Mercedes-Benz pagode 280sl de 1968 en parfait état.</p>
+      <p class="price">€150</p>
+      <button class="add-to-cart">Ajouter au Panier</button>
+    </div>
+     
+    <div class="product-card">
+      <img src="images/jantes.jpeg" alt="Nom de la pièce">
+      <h3>Jantes Porsches 930</h3>
+      <p>Lot de 4 jantes de Porsches 911 type 930, noirs et en parfait état.</p>
+      <p class="price">€600</p>
+      <button class="add-to-cart">Ajouter au Panier</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/miura.jpeg" alt="Nom de la pièce">
+      <h3>Phares arrières de Lamborghini miura</h3>
+      <p>2 phares de signalement de Miura de 1962 en tres bon etat</p>
+      <p class="price">€2300</p>
+      <button class="add-to-cart">Ajouter au Panier</button>
+    </div>
+  
+  </section>
+
+  <footer>
+    <p>Contactez-nous | Mentions Légales | Suivez-nous</p>
+  </footer>
+
+</body>
+</html>
